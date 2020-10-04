@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Githbu1004.iml" filepath="$PROJECT_DIR$/Githbu1004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GoodsBill/GoodsBill.iml" filepath="$PROJECT_DIR$/GoodsBill/GoodsBill.iml" />
+    </modules>
+  </component>
+</project>
