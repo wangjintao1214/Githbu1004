@@ -72,4 +72,17 @@ public class Goods {
     public void setCreationtime(Date creationtime) {
         this.creationtime = creationtime;
     }
+
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "id=" + id +
+                ", goodsname='" + goodsname + '\'' +
+                ", billstatus=" + billstatus +
+                ", goodsdistrict=" + goodsdistrict +
+                ", goodsprice=" + goodsprice +
+                ", goodscount=" + goodscount +
+                ", creationtime=" + creationtime +
+                '}';
+    }
 }

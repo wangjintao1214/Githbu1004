@@ -36,7 +36,7 @@
                 <c:if test="${goods.billstatus==1}">处理中</c:if>
                 <c:if test="${goods.billstatus==2}">已处理</c:if>
             </td>
-            <td><a href="/toUpd?id=${goods.id}">修改</a></td>
+            <td><a href="/toupd?id=${goods.id}">修改</a></td>
         </tr>
     </c:forEach>
 </table>

@@ -31,7 +31,7 @@ public class GoodsController {
         model.addAttribute("goods", goods);
         return "main";
     }
-    @RequestMapping("/toUpd")
+    @RequestMapping("/toupd")
     public String toUpd(Integer id, Model model){
         Goods goods = goodsService.selectAllById(id);
         System.out.println(goods.toString());
@@ -41,14 +41,12 @@ public class GoodsController {
     @RequestMapping("/doupd")
     public  String doupd(Goods goods,HttpSession session){
         int i = goodsService.upd(goods);
-        System.out.println(goods.toString());
         if(i>0){
-            System.out.println(goods.toString());
             session.setAttribute("msg","更新成功！！！！");
             return "redirect:/";
         }else {
             session.setAttribute("msg","修改失败！！！！");
-            return "redirect:/toUpd";
+            return "redirect: /toupd";
         }
     }
 }

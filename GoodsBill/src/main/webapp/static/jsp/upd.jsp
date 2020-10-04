@@ -18,8 +18,8 @@
     <tr>
         <td>商品编号：</td>
         <td>
-            <input type="hidden" value="${goods.goodsdistrict}">
-            <input type="text" value="${goods.id}" name="id">
+            <input type="hidden" value="${goods.goodsdistrict}" name="goodsdistrict">
+            <input type="text" value="${goods.id}" name="id" readonly>
         </td>
     </tr>
     <tr>
@@ -38,10 +38,11 @@
         <td>订单状态：</td>
         <td>
             <select name="billstatus">
-                <option value="${goods.billstatus==0}">待处理</option>
-                <option value="${goods.billstatus==1}">处理中</option>
-                <option value="${goods.billstatus==2}">已处理</option>
+                <option <c:if test="${goods.billstatus == 0}"> selected </c:if> value="0">待处理</option>
+                <option <c:if test="${goods.billstatus == 1}"> selected </c:if> value="1">处理中</option>
+                <option <c:if test="${goods.billstatus == 2}"> selected </c:if> value="2">已处理</option>
         </select>
+            <input type="hidden" name="creationtime" value="${goods.creationtime}">
         </td>
     </tr>
     <tr>
